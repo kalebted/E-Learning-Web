@@ -6,6 +6,7 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white text-dark">
       <Navbar />
+      <div></div>
     </main>
   );
 }
