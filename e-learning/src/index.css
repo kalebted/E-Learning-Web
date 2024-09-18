@@ -11,6 +11,12 @@
   }
 }
 
+@layer utilities{
+  .drop-shadow {
+    filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5));
+  }
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
