@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
 import { IoMdMenu } from "react-icons/io";
+import { motion } from 'framer-motion';
 
 const NavbarMenu = [
   {
@@ -33,7 +33,10 @@ const NavbarMenu = [
 const Navbar = () => {
   return (
     <nav className='relative z-20'>
-      <div className="container py-10 flex justify-between items-center">
+      <motion.div 
+      initial={{opacity:0, y:-50}}
+      animate={{opacity: 1, y:0}}
+      className="container py-10 flex justify-between items-center">
         {/* logo section */}
         <div>
             <h1 className='font-bold text-2xl'>The Coding Journey</h1>
@@ -60,7 +63,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <IoMdMenu className="text-4xl" />
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 }

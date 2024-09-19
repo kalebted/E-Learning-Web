@@ -62,13 +62,18 @@ const Hero = () => {
                 {/* Hero Image */}
                 <div className="flex justify-center items-center">
                     <motion.img
-                         initial={{x:50}}
+                        initial={{x:50, opacity:0}}
+                        animate={{x:0, opacity:1}}
+                        transition={{duration: 0.6, delay: 0.4, ease: "easeInOut"}}
                         src={HeroPng}
                         alt=""
                         className="w-[400px] xl:w-[600px] relative z-10
                         drop-shadow"
                     />
-                    <img
+                    <motion.img
+                        initial={{ x: -50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
                         src={Blob}
                         alt=""
                         className='absolute -bottom-32 w-[800px] md:w-[1500px] z-[1] 
