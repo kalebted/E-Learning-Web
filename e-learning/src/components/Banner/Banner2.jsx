@@ -1,9 +1,5 @@
 import React from "react";
 import BannerPng from "../../assets/banner.png";
-import { GrUserExpert } from "react-icons/gr";
-import { MdOutlineAccessTime } from "react-icons/md";
-import { FaBookReader } from "react-icons/fa";
-import { FadeUp } from "../Hero/Hero";
 import { motion } from "framer-motion";
 
 const Banner2 = () => {
